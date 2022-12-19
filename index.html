@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Pacifico&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+<style> @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Pacifico&family=Zen+Old+Mincho&display=swap'); </style>
+</head>
+
+<style>
+    .body {
+        background-color: rgb(229, 221, 178);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    a{
+        color: black;
+    }
+    a:visited{
+        color: black;
+    }
+    a:hover{
+        color: black;
+    }
+    .block2 {
+        height: 100vh;
+        background-color: rgb(243, 242, 198);
+    }
+    .block3{
+        
+        height: 100vh;
+        background-color: rgb(229, 221, 178);
+    }
+    .osn{
+        display: flex;
+    }
+    .imgg {
+        border-top-right-radius: 8%;
+        border-bottom-right-radius: 8%;
+        border-bottom-left-radius: 2%;
+        background-color: rgb(211, 213, 215);
+    }
+
+    .hover-image-scale {
+        display: inline-block;
+    }
+
+    .hover-image-scale img {
+        transition: 1s;
+        display: block;
+    }
+
+    .hover-image-scale img:hover {
+        transform: scale(1.2);
+    }
+
+    .img {
+        width: 80%;
+        height: auto;
+    }
+    .img2{
+        width: 20%!important;
+        height: 20%!important;
+    }
+    .block1 {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1%;
+    }
+
+    .text {
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .textmodal{
+        font-size: 17px;
+
+    }
+    h3:hover {
+        color: rgb(53, 92, 137);
+    }
+
+    .forms {
+        padding-left: 5%;
+        font-size: 120%;
+        flex-wrap: wrap;
+    }
+
+    .formss {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+
+    }
+    .gallery{
+        display: flex;
+    }
+    .gallery1{
+        width: 48%!important;
+       
+    }
+    .gallery2{
+        width: 48%!important;
+        position: absolute;
+        right: 0;
+    }
+    .formdil{
+        margin-left: 5%;
+        margin: auto;
+        width: 40%!important;
+    }
+    .contact{
+        text-align: center;
+        margin: auto    ;
+    }
+    .contacttext{
+        font-family: 'Pacifico', cursive;
+    }
+    .contacttext2{
+        font-family: 'Zen Old Mincho', serif;
+    }
+    .letterss{
+       font-size: 170%;
+       width: 40%;
+       display: flex;
+        justify-content: space-around;
+        margin-left: 5%;
+        margin-top: 2%; 
+        font-family: 'Zen Old Mincho', serif; 
+        
+    } .letters{
+       font-size: 170%;
+       width: 13%;
+       display: flex;
+        justify-content: space-around;
+        margin-left: 17.5%;  
+        font-family: 'Zen Old Mincho', serif;
+        font-weight: bold;
+    }
+    
+</style>
+
+<body>
+    <div class="body" id="block1">
+        <a href="#block2"><img style=" position: absolute;   bottom: 0; right: 0;" src="https://cdn-icons-png.flaticon.com/512/7974/7974090.png" width="70" height="70"></a>
+        <div class="block1">
+            <div class="imgg hover-image-scale">
+
+                <img class="img hover-image-scale "
+                    src="		https://site-dverei.ru/image/cache/webp/catalog/category-image/01-mezhkomnatnye-dver-350x350.webp">
+                <a style="text-decoration: none;" href="#block2"><h3 class="text">Межкомнатные двери</h3></a>
+            </div>
+            <div class="imgg hover-image-scale">
+                <img class="img hover-image-scale"
+                    src="	https://site-dverei.ru/image/cache/webp/catalog/category-image/01-vhodnye-dveri-350x350.webp">
+                    <a style="text-decoration: none;" href="#block2"><h3 class="text"> Входные двери</h3></a>
+            </div>
+            <div class="imgg hover-image-scale">
+                <img class="img hover-image-scale" src="	https://site-dverei.ru/image/cache/webp/catalog/category-image/ulyanovskie-dveri-350x350.webp
+                ">
+                <a style="text-decoration: none;" href="#block2"><h3 class="text">Бронированные двери</h3></a>
+            </div>
+        </div> 
+        <form id="form">
+            
+            <div class="formss">
+                <br /><br />
+                <div class="forms">
+                    <br />
+                    <b>Типы ручек</b><br />
+                    <input type="radio" name="Тип ручки" value="Станционарные" checked> Стационарные<br />
+                    <input type="radio" name="Тип ручки" value="Защелки"> Защелки<br />
+                    <input type="radio" name="Тип ручки" value="С защелкой и фиксатором"> С защелкой и фиксатором<br />
+                    <input type="radio" name="Тип ручки" value="С защелкой и замком"> С защелкой и замком<br />
+                    <b>Цвет двери</b><br />
+                    <input type="radio" name="Цвет двери" value="Белая" checked> Белая<br />
+                    <input type="radio" name="Цвет двери" value="Коричневая"> Коричневая<br />
+                    <input type="radio" name="Цвет двери" value="Серая"> Серая<br />
+                    <input type="radio" name="Цвет двери" value="Черная"> Черная<br />
+                </div>
+                <br /><br />
+                <div class="forms">
+                    <br />
+                    <b>Наличие и вид глазка</b><br />
+                    <input type="radio" name="Наличие и вид глазка" value="Нет" checked> Нет<br />
+                    <input type="radio" name="Наличие и вид глазка" value="Да. Стандартный"> Да. Стандартный<br />
+                    <input type="radio" name="Наличие и вид глазка" value="Да. Скрытый"> Да. Скрытый<br />
+                    <input type="radio" name="Наличие и вид глазка" value="Да. Электронный"> Да. Электронный<br />
+                    <b>Тип замка</b><br />
+                    <input type="radio" name="Тип замка" value="Без замка" checked> Без замка<br />
+                    <input type="radio" name="Тип замка" value="Сувальдный"> Сувальдный<br />
+                    <input type="radio" name="Тип замка" value="Электронный"> Электронный<br />
+                    <input type="radio" name="Тип замка" value="Биометрический"> Биометрический<br />
+                    <br /><br />
+                </div>
+                <div class="forms">
+                    <br />
+                    <b>Защита двери от взлома</b><br />
+                    <input type="radio" name="Защита двери от взлома" value="Нет" checked> Нет<br />
+                    <input type="radio" name="Защита двери от взлома" value="Да"> Да<br />
+                    <b>Материал двери</b><br />
+                    <input type="radio" name="Материал двери" value="Дерево" checked> Дерево<br />
+                    <input type="radio" name="Материал двери" value="Металл"> Металл<br />
+                    <input type="radio" name="Материал двери" value="Дерево+металл"> Дерево+металл<br />
+                    <b>Размер двери</b><br />
+                    <input type="radio" name="Размер двери" value="Жилая комната, входная 800*2000" checked> Жилая
+                    комната, входная 800*2000<br />
+                    <input type="radio" name="Размер двери" value="Ванная 600*1900"> Ванная 600*1900<br />
+                    <input type="radio" name="Размер двери" value="Гостиная 900*2000"> Гостиная 900*2000<br />
+                </div>
+                <div class="forms">
+                    <br />  
+                    <b>Тип двери</b><br />
+                    <input type="radio" name="Тип двери" value="Межкомнатная" checked> Межкомнатная<br />
+                    <input type="radio" name="Тип двери" value="Входная"> Входная<br />
+                    <input type="radio" name="Тип двери" value="Бронированная"> Бронированная<br />
+                    <div>
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-top: 13%;" class="btn btn-light">Отправить форму</button>
+                    </div>
+                </div>
+                <pre id="log">
+            </pre>
+            
+            </div>
+        </form>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Спасибо за заказ!!!</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Выбранные вами параметры:</h5>
+                    <p></p>
+                    <p class="textmodal"><u>Тип двери: </u> <b><span id="type"></span></b></p>
+                    <p class="textmodal"><u>Материал двери: </u> <b><span id="material"></span></b></p>
+                    <p class="textmodal"><u>Размер двери: </u> <b><span id="size"></span></b></p>
+                    <p class="textmodal"><u>Цвет двери: </u> <b><span id="doorcolor"></span></b></p>
+                    <p class="textmodal"><u>Тип ручки: </u> <b><span id="oorhandle"></span></b></p>
+                    <p class="textmodal"><u>Наличие и вид глазка: </u> <b><span id="peephole"></span></b></p>
+                    <p class="textmodal"><u>Тип замка: </u> <b><span id="lock"></span></b></p>
+                    <p class="textmodal"><u>Защита двери от взлома: </u> <b><span id="protection"></span></b></p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Закрыть</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+    
+    <div class="block2" id="block2">
+        
+        <div class="gallery" >      
+          <div class="gallery2">
+            <br/>
+            <h3 >Входные/бронированные двери</h3>
+        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://дверивходные.рф/images/catalog/premum/odissea/geralt_int.jpg" class="d-block w-100 " height="390px"  alt="...">
+                  </div>
+                <div class="carousel-item">
+                    <img src="https://linedoor-yug.ru/local/templates/.default/img/ComanDoor%20-%20Met%20Titan_Vnutr.jpg" class="d-block w-100 " height="390px" alt="...">
+                  </div>
+             
+              
+              <div class="carousel-item">
+                <img src="https://torex.ru/upload/blog/articles/1172009/060320-img-10.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://guardian.ru/upload/iblock/91b/Stalnye-dveri-Gardian-FL-75.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://guardian.ru/upload/iblock/0a0/Stalnye-dveri-Gardian-otdelka-Geometriya-02_1.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://stoneforest.ru/wp-content/uploads/2020/12/Gde-kupit-bronirovannye-vhodnye-dveri_3.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.siteapi.org/vIgaj4yKfBp1gBEsC7aNRKVtlp8=/0x0:1200x738/9c20bcf880801e9.s.siteapi.org/img/jb6ljqhvin4gg840sw8sk8g0gc88w4" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://torex.ru/upload/blog/articles/1172009/060320-img-15.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+             
+        
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> <div>
+            <br/>
+            <h5>Преимущества входных дверей</h5>
+            <p>Основных преимущества — доступность и большой выбор. Приобрести входную стальную дверь можно на любом строительном рынке или в гипермаркете. Прочность и долговечность. Качественная стальная дверь может прослужить несколько десятков лет, успешно защищая помещение от попыток взлома.
+            </p>
+            <h5>Преимущества бронированных дверей</h5>
+            <p>Бронированные двери обеспечивают надежную защиту от несанкционированного доступа злоумышленников в помещение.Наличием теплоизоляции, позволяющей эффективно снизить затраты на обогрев и охлаждение помещения.
+                <p id="demo"></p>
+            </p>
+          </div>
+          <a href="#block3"><img style=" position: absolute;  bottom: 0; right: 0;" src="https://cdn-icons-png.flaticon.com/512/7974/7974090.png" width="70" height="70"></a></div>
+          <div class="gallery1">
+            <br/>
+            <h3>Межкомнатные двери</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+             
+                <img src="https://www.keramis.com.ua/wa-data/public/blog/img/kak-vybrat-mezhkomnatnye-dveri-1.jpg" class="d-block w-100 " height="390px"  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://belwooddoors.ru/upload/iblock/563/563ed610b9f083e7cbf82f769fc9520a.png" class="d-block w-100 " height="390px" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dverihall.net/assets/images/home-doors-catalog.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dekormyhome.ru/wp-content/uploads/2019/08/neoclassic.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dveri9.ru/image/catalog/articles/0eede910ef6098d6df77aeaf564c13a7.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://designservice.group/wp-content/uploads/2019/09/2955487274386457_457a-1024x640.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://porte-richi.by/upload/resize_cache/webp/iblock/52a/1vuf96lh041c6oeb4gwfozrayt8kv1pi.webp" height="390px" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://yocity12.com/upload/quickly/Interier_14.jpg" height="390px" class="d-block w-100 " alt="...">
+              </div>
+             
+        
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <br/>
+            <h5>Преимущества межкомнатных дверей</h5>
+            <p>К приемуществам можно отнести повышенную прочность, такие двери не только устойчивы к механическим повреждениям, но и способны выдержать большую эксплуатационную нагрузку. Так же двери влагоустойчивы (одни из лучших показателей среди межкомнатных дверей), устойчивы к световому и УФ-воздействию, не выгорают на солнце и устойчивы к перепадам температур. Материал хорошо противостоит размножению бактерий, препятствует возникновению грибка или плесени. 
+            </p>
+            <a href="#block1"><img  style=" bottom: 0;" src="https://cdn-icons-png.flaticon.com/512/2926/2926224.png" width="70" height="70"></a>
+          </div>
+        </div>
+        
+        </div>
+    </div>
+    <div class="block3" id="block3">
+        <a href="#block2"><img  style=" bottom: 0;" src="https://cdn-icons-png.flaticon.com/512/2926/2926224.png" width="70" height="70"></a>
+        <div class="osn">
+        <br/><br/>
+        <form class="formdil"  id="formtwo" >
+            
+            <div class="mb-3">
+                <h2>Форма вызова замерщика</h2>
+              <label for="name1" class="form-label">Имя:</label>
+              <input type="text" class="form-control" name="name" id="name1"  >
+            </div>
+            <div class="mb-3">
+              <label for="number1" class="form-label">Номер телефона:</label>
+              <input type="text" class="form-control" name="number" id="number1"  >
+            </div>
+            <div class="mb-3">
+              <label for="adress1" class="form-label">Адрес: </label>
+              <input type="text" class="form-control" name="adress" id="adress1" >
+            </div>
+            <div class="mb-3">
+                <label for="day" class="form-label">Введите желаемый день приезда замерщика: </label>
+                <input type="text" class="form-control" name="day" id="day1" >
+              </div>
+              <div class="mb-3">
+                <label for="time" class="form-label">Введите желаемое время приезда замерщика: </label>
+                <input type="text" class="form-control" name="time" id="time1" >
+              </div>
+              
+            
+            <button type="submit" class="btn btn-light"  data-bs-toggle="modal" data-bs-target="#exampleModal1" >Отправить</button>
+          </form>
+        
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel1">Ваша заявка зарегистрирована</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Введенные вами данные:</h5>
+                    <p></p>
+                    <p class="textmodal"><u>Имя: </u> <b><span id="name"></span></b></p>
+                    <p class="textmodal"><u>Номер телефона : </u> <b><span id="number"></span></b></p>
+                    <p class="textmodal"><u>Адрес: </u> <b><span id="adress"></span></b></p>
+                    <p class="textmodal"><u>День: </u> <b><span id="day"></span></b></p>
+                    <p class="textmodal"><u>Время: </u> <b><span id="time"></span></b></p>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Закрыть</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <h1 class="contacttext"> Будем рады с вами сотрудничать</h1><br/><br/><br/><br/>
+            <h4 class="contacttext2"> <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" height="15" width="15"> Наша почта: <a href="mailto:test@test.com">test@test.com</a></h4>
+            <h4 class="contacttext2"><img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" height="15" width="15"> Наш номер телефона: <a href="tel:79567879009">79567879009</a></h4>
+            <h4 class="contacttext2"><img src="https://cdn-icons-png.flaticon.com/512/220/220377.png" height="15" width="15"> Наш скайп: <a href="skype:79567879009?call">door</a></h4>
+           
+          </div>
+             
+    </div>
+<div class="letterss">
+    <a name="latters" id="а">а </a><a name="latters" id="б">б </a>
+    <a name="latters" id="в">в </a><a name="latters" id="г">г </a>
+    <a name="latters" id="д">д </a><a name="latters" id="е">е </a>
+    <a name="latters" id="ж">ж </a>
+    <a name="latters" id="з">з </a>
+    <a name="latters" id="и">и </a><a name="latters" id="й">й </a>
+    <a name="latters" id="к">к </a><a name="latters" id="л">л </a>
+    <a name="latters" id="м">м </a><a name="latters" id="н">н </a>
+    <a name="latters" id="о">о </a><a name="latters" id="п">п </a>
+    <a name="latters" id="р">р </a><a name="latters" id="с">с </a>
+    <a name="latters" id="т">т </a><a name="latters" id="у">у </a>
+    <a name="latters" id="ф">ф </a>
+    <a name="latters" id="х">х </a><a name="latters" id="ц">ц </a>
+    <a name="latters" id="ч">ч </a><a name="latters" id="ш">ш </a>
+    <a name="latters" id="щ">щ </a><a name="latters" id="ь">ь </a>
+    <a name="latters" id="ъ">ъ </a>
+    <a name="latters" id="ы">ы </a><a name="latters" id="э">э </a>
+    <a name="latters" id="ю">ю </a><a name="latters" id="я">я </a>
+</div>
+<div class="letters">
+    <a name="latters" id="1">1 </a><a name="latters" id="2">2 </a>
+    <a name="latters" id="3">3 </a><a name="latters" id="4">4 </a>
+    <a name="latters" id="5">5 </a><a name="latters" id="6">6 </a>
+    <a name="latters" id="7">7 </a><a name="latters" id="8">8 </a>
+    <a name="latters" id="9">9 </a><a name="latters" id="0">0 </a>
+</div>
+</div>
+
+    <script>
+       
+        onmousemove = handler;
+        let old_target; let timer; let timer2;let letter;
+        function handler(event) {
+            
+            if (old_target === event.target) return;
+            clearTimeout(timer);
+            
+            old_target=event.target;
+            
+            
+                    
+           
+            function click() {
+                event.target.click()
+                let tagName=event.target.tagName;
+                let type = event.target.type;
+                if ((tagName==="INPUT") && (type==="text")){
+                    event.target.focus();
+                }
+                if (event.target.name==="latters"){
+                    console.log("wuu");
+                    letter=event.target.id;
+                    document.activeElement.value+=letter;
+                }
+            }
+            timer = setTimeout(click, 1000);
+           
+        }   
+        let oorhandle; let doorcolor; let peephole; let lock
+        let protection; let material; let size;
+
+
+        const formElement = document.getElementById('form');
+        formElement.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log("G");
+            const formData = new FormData(formElement);
+            oorhandle = formData.get('Тип ручки');
+            doorcolor = formData.get('Цвет двери');
+            peephole = formData.get('Наличие и вид глазка');
+            lock = formData.get('Тип замка');
+            protection = formData.get('Защита двери от взлома');
+            material = formData.get('Материал двери');
+            size = formData.get('Размер двери');
+            type = formData.get('Тип двери');
+            console.log(oorhandle);
+            document.getElementById("oorhandle").innerText =oorhandle;
+            document.getElementById("doorcolor").innerText =doorcolor;
+            document.getElementById("peephole").innerText = peephole;
+            document.getElementById("lock").innerText =lock;
+            document.getElementById("protection").innerText =protection;
+            document.getElementById("material").innerText =material;
+            document.getElementById("size").innerText =size;
+            document.getElementById("type").innerText =type;
+            document.getElementById("form").reset();
+        });
+
+        const formElement2 = document.getElementById('formtwo');
+        formElement2.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log("G");
+            const formData = new FormData(formElement2);
+            let name = formData.get('name');
+            let number = formData.get('number');
+            let adress = formData.get('adress');
+            let day = formData.get('day');
+            let time = formData.get('time');
+            console.log(day);
+           
+            document.getElementById("name").innerText =name;
+            document.getElementById("number").innerText =number;
+            document.getElementById("adress").innerText = adress;
+            document.getElementById("day").innerText =day;
+            document.getElementById("time").innerText =time;
+            document.getElementById("formtwo").reset();
+        
+        });
+    </script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
